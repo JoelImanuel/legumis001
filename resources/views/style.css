@@ -1,0 +1,511 @@
+:root {
+    --clr-primary: #87c4ff;
+    --clr-danger: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-cream: #ffeed9;
+    --clr-info-dark: #7d8c9f;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #363949;
+    --clr-warning: #ff4edc;
+    --clr-light: rgba(132, 139, 200, 0.18);
+    --clr-primary-variant: #111e88;
+    --clr-dark-variant: #677483;
+    --clr-color-background: #f9e8d9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+    --gradient: linear-gradient(90deg, #ffeed9, #87c4ff, #e0f4ff);
+}
+
+/* dark theme */
+.dark-theme-variables {
+    --clr-color-background: #181a1e;
+    --clr-white: #202528;
+    --clr-light: rgba(0, 0, 0, 0.4);
+    --clr-dark: #edeffd;
+    --clr-dark-variant: #677483;
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: 0;
+    appearance: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    /* user-select: none; */
+    overflow-x: hidden;
+    background-color: var(--clr-color-background);
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.container {
+    display: grid;
+    width: 96.5%;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 14rem;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--clr-dark);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+.profil-photo {
+    width: 2.8rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--clr-info-dark);
+}
+
+p {
+    color: var(--clr-dark-variant);
+}
+
+b {
+    color: var(--clr-dark);
+}
+
+.primary {
+    color: var(--clr-primary);
+}
+
+.success {
+    color: var(--clr-success);
+}
+
+.danger {
+    color: var(--clr-danger);
+}
+
+.warning {
+    color: var(--clr-warning);
+}
+
+/* aside */
+aside {
+    height: 100vh;
+}
+
+aside .top {
+    background-color: var(--clr-cream);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+    gap: 1rem;
+}
+
+aside .top div.close {
+    display: none;
+}
+
+/* menu */
+aside .menu {
+    background-color: var(--clr-cream);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+}
+
+aside .h3 {
+    font-weight: 500;
+}
+
+aside .menu a {
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all 0.2s ease;
+}
+
+aside .menu a:hover,
+aside .menu .active {
+    background: var(--clr-light);
+    color: var(--clr-primary);
+    margin-left: 0;
+    border-left: 5px solid var(--clr-primary);
+    padding-left: 1rem;
+}
+
+aside .menu a span {
+    font-size: 1.6rem;
+    transition: all 0.1.5s ease-in;
+}
+
+aside .menu a:last-child {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+
+    display: grid;
+    width: 100%;
+    padding: auto;
+    margin: 95px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 23px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.content-transaksi {
+    position: relative;
+
+    display: grid;
+    width: 100%;
+    padding: auto;
+    margin: 95px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.thumbnail-transaksi {
+    position: relative;
+    padding: 23px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    /* display: flex; */
+    /* justify-content: start; */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.content-transaksi .thumbnail-transaksi .paid{
+    display: flex;
+    justify-content: end;
+    color: red;
+}
+.content-transaksi .thumbnail-transaksi .status{
+    display: flex;
+    justify-content: end;
+    color: red;
+}
+
+.thumbnail:hover {
+    background: var(--clr-info-light);
+}
+
+.thumbnail:hover .numbers,
+.thumbnail:hover .cardName,
+.thumbnail:hover .iconbx {
+    color: var(--clr-info-dark);
+    transition: all 0.1.5s ease-in;
+}
+
+.thumbnail .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: var(--clr-primary-variant);
+}
+
+.thumbnail .cardName {
+    color: var(--clr-dark);
+    font-size: 1.1rem;
+    margin-top: 5px;
+    display: flex;
+}
+
+.thumbnail .iconbx {
+    font-size: 3.5rem;
+    color: var(--clr-dark-variant);
+}
+
+.todo {
+    font-family: "Garamond";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box .lis {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+}
+
+.box .lis h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: var(--clr-dark);
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.box .lis #grocery {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.box .lis #grocery input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    outline: none;
+}
+
+.box .lis #grocery button {
+    background: var(--clr-primary);
+    color: #fff;
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid #333;
+    cursor: pointer;
+    outline: none;
+}
+
+ol {
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    min-height: 398px;
+    background-size: 50px 50px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    background: #fff repeating-linear-gradient(transparent 0%, transparent 99%, #000 100%);
+}
+
+ol li {
+    position: relative;
+    font-size: 1.5em;
+}
+
+ol li .remove {
+    position: relative;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(Minus.jpg);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ol li .done p {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+ol li .done p::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    background: url(Done.jpg);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customer-box {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-between;
+    /* border-radius: 10px; */
+}
+
+.customer-pad {
+    padding: 70px;
+}
+
+.customer-tick {
+    padding: 10px 20px;
+}
+
+/* accordion */
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.active,
+.accordion:hover {
+    background-color: #eee;
+}
+
+.panel {
+    padding: 18px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    top: -10px;
+    font-size: 12px;
+}
+
+.panel p {
+    font-size: 16px;
+}
+
+.in-panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+
+/* login.php dan register.php */
+.halaman_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #00bbd3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* batas style login.php dan register.php */

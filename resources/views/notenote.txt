@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Masuk</a></li>
+        <li><a href="register.php">Daftar</a></li>
+    </ul>
+
+
+
+
+    <form action="login_process.php" method="POST">
+    <div>
+        <input type="text" name="admin" id="loginName">
+        <label for="loginName">Email atau nama pengguna</label>
+    </div>
+
+    <div>
+        <input type="password" name="password" id="loginPassword">
+        <label for="loginPassword">Kata sandi</label>
+    </div>
+
+    <button type="submit">Masuk</button>
+    <div>
+        <p>Belum punya akun? <a href="register.php">Mari daftar dulu</a></p>
+    </div>
+
+    <!-- register -->
+    <div>
+        <input type="text" id="registerName">
+        <label for="registerName">Nama pengguna</label>
+    </div>
+    <div>
+        <input type="password" id="registerPassword">
+        <label for="registerPassword">Password</label>
+    </div>
+    <button type="submit">Daftar</button>
+    </form>
+
+
+    
+
+</body>
+</html>
