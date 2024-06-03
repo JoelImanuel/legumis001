@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProdukController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('customer', function () {
+    return view('customer');
+});
+Route::get('analisa', function () {
+    return view('analisa');
+});
+Route::get('pengiriman', function () {
+    return view('pengiriman');
+});
+Route::get('transaksi', function () {
+    return view('transaksi');
+});
+Route::resource('produk', ProdukController::class);
+
