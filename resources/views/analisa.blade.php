@@ -4,14 +4,14 @@
             <div class="customer-pad">
                 <button class="customer-box accordion thumbnail">
                     <div>Vinsen</div>
-                    <div style="color: green;">+ Rp10000</div>
+                    <div style="color: green;">+ Rp12000</div>
                 </button>
                 <div class="panel">
                     <div class="in-panel">
                         <div>
                             <strong>Nasi Kuning Telur</strong> <br>
                             Akan dibayar: <strong style="color: red;">3 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp10000</strong></p>
+                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
