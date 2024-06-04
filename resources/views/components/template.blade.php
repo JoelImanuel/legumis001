@@ -19,7 +19,7 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <h2>Legumis<span class="name"> snack</span></h2>
+                    <h2>Legumis<span class="name"> </span></h2>
 
                 </div>
             </div>
