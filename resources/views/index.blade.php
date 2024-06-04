@@ -53,7 +53,7 @@
                 </div>
                 <a href="transaksi.php"><div class="thumbnail">
                     <div>
-                        <div class="numbers">Rp 10k</div>
+                        <div class="numbers">Rp 12k</div>
                         <div class="cardName">Total nominal terjual</div>
                     </div>
 

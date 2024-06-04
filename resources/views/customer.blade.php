@@ -10,7 +10,7 @@
                         <div>
                             <strong>Nasi Kuning Ayam</strong> <br>
                             Akan dibayar: <strong style="color: red;">1 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp10000</strong></p>
+                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
@@ -22,7 +22,7 @@
                         <div>
                             <strong>Nasi Kuning Telur</strong> <br>
                             Akan dibayar: <strong style="color: red;">2 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp10000</strong></p>
+                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
@@ -40,7 +40,7 @@
                         <div>
                             <strong>Nasi Kuning Telur</strong> <br>
                             Akan dibayar: <strong style="color: red;">3 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp10000</strong></p>
+                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
