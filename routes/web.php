@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/login', [AuthController::class, 'index']);
+
 Route::get('customer', function () {
     return view('customer');
 });
