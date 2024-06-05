@@ -12,8 +12,8 @@
   <div class="halaman_login">
     <form method="post">
       <h1>Tempat Login Admin</h1>
-      <label for="username">email:</label>
-      <input type="text" name="email" id="emailLogin" placeholder="Nama email" required>
+      <label for="username">Email:</label>
+      <input type="text" name="email" id="emailLogin" placeholder="Nama Email" required>
       <br>
       <label for="password">Password:</label>
       <input type="password" name="password" id="adminPassword" placeholder="Password" required>
