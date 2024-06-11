@@ -3,17 +3,29 @@
             <div class="box">
                 <div class="lis">
                     <h2>List Bahan Makanan</h2>
-                    <form id="grocery">
-                        <input id="writelist" type="text" placeholder="Item Belanja" require>
-                        <input id="writelist" type="text" placeholder="Item Harga" require>
+                    <form id="grocery" action="" method="POST">
+                        @csrf
+                        <input id="writelist" type="text" placeholder="Item Belanja" require name="nama" id="nama">
+                        <input id="writelist" type="text" placeholder="Item Harga" require name="harga" id="harga">
+                        {{-- <input id="writelist" type="text" placeholder="Stok Produk" require name="stok_produk" id="stok_produk"> --}}
                         <button>Tambah item</button>
                     </form>
                 </div>
             </div>
-            <ol>aaaaaaa</ol>
+            <ol>
+                @foreach ($bahans as $bahan)
+                    <li>{{ $bahan->nama.' '.$bahan->harga }} 
+                        <form action="/produk/{{ $bahan->id }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button>Delete</button>
+                        </form>
+                    </li>
+                @endforeach
+            </ol>
         </main>
 </x-template>
-    <script>
+    {{-- <script>
          let grocery = document.getElementById('grocery');
          grocery.addEventListener('submit', addItem);
          function addItem(e){
@@ -42,4 +54,4 @@
          function doneItem(e){
             this.classList.toggle('done');
          }
-    </script>
+    </script> --}}
