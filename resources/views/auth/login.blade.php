@@ -20,8 +20,6 @@
       <br>
       <button type="submit" name="login">Login</button>
       <div>
-        <h4>Belum punya akun?<a href="register.php" style="text-decoration: underline; margin-left: 10px;">Klik untuk daftar</a></h4>
-      </div>
     </form>
 
   </div>
