@@ -13,14 +13,14 @@
                         <div>Nasi Kuning Ayam</div>
                         <div>
                             1x
-                            <button class="customer-tick">Selesai</button>
+                            <button class="customer-tick" style="background-color: #999;">Selesai</button>
                         </div>
                     </div>
                     <div class="in-panel">
                         <div>Nasi Kuning Telur</div>
                         <div>
                             1x
-                            <button class="customer-tick">Selesai</button>
+                            <button class="customer-tick" style="background-color: #999;">Selesai</button>
                         </div>
                     </div>
                     <small><em>Jalan itu ini no 100, Pontianak</p></em></small><p>
@@ -35,7 +35,7 @@
                         <div>Nasi Kuning Telur</div>
                         <div>
                             1x
-                            <button class="customer-tick">Selesai</button>
+                            <button class="customer-tick" style="background-color: red;">Selesai</button>
                         </div>
                     </div>
                     <small><em>Jalan ini itu no 29, Kubu Raya</p></em></small><p>

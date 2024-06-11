@@ -10,6 +10,10 @@
                     <div>stanley</div>
                     <div style="color: green;">+ Rp12000</div>
                 </button>
+                <button class="customer-box accordion thumbnail">
+                    <div>stanley</div>
+                    <div style="color: green;">+ Rp12000</div>
+                </button>
                 <div class="panel">
                     <div class="in-panel">
                         <div>

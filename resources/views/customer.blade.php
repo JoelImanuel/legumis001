@@ -9,25 +9,25 @@
                     <div class="in-panel">
                         <div>
                             <strong>Nasi Kuning Ayam</strong> <br>
-                            Akan dibayar: <strong style="color: red;">1 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
+                            Akan dibayar: <strong style="color: white;">1 April 2024</strong> <br>
+                            <p style="font-size: 12px;">Harga: <strong style="color: green;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
                             1x
-                            <button class="customer-tick">Selesai</button>
+                            <button class="customer-tick" style="background-color:#999">Selesai</button>
                         </div>
                     </div>
                     <div class="in-panel">
                         <div>
                             <strong>Nasi Kuning Telur</strong> <br>
-                            Akan dibayar: <strong style="color: red;">2 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
+                            Akan dibayar: <strong style="color: white;">2 April 2024</strong> <br>
+                            <p style="font-size: 12px;">Harga: <strong style="color: green;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
                             1x
-                            <button class="customer-tick">Selesai</button>
+                            <button class="customer-tick" style="background-color:#999">Selesai</button>
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
                 <div class="in-panel">
                         <div>
                             <strong>Nasi Kuning Telur</strong> <br>
-                            Akan dibayar: <strong style="color: red;">3 April 2024</strong> <br>
-                            <p style="font-size: 12px;">Harga: <strong style="color: red;">Rp12000</strong></p>
+                            Akan dibayar: <strong style="color: white;">3 April 2024</strong> <br>
+                            <p style="font-size: 12px;">Harga: <strong style="color: green;">Rp12000</strong></p>
                         </div>
                         <!-- <div>1 April 2024</div> -->
                         <div>
