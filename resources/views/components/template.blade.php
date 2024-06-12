@@ -62,10 +62,10 @@
                     <span class="material-symbols-outlined">receipt_long</span>
                     <h3>Produk</h3>
                 </a>
-                <a href="pengaturan">
+                <!-- <a href="pengaturan">
                     <span class="material-symbols-outlined">settings</span>
                     <h3>Pengaturan</h3>
-                </a>
+                </a> -->
                 <a href="login">
                     <span class="material-symbols-outlined">login</span>
                     <h3>Keluar</h3>
