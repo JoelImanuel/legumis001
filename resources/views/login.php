@@ -33,7 +33,7 @@ if (isset($_POST["login"])) {
   <div class="halaman_login">
     <form method="post">
       <h1>Tempat Login Admin</h1>
-      <label for="username">nama admin:</label>
+      <label for="username">namafff admin:</label>
       <input type="text" name="admin" id="adminLogin" placeholder="Nama admin" required>
       <br>
       <label for="password">Password:</label>
