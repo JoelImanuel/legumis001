@@ -82,7 +82,7 @@
 
 <body>
   <div class="login-container">
-    <form method="post" class="login-form" action="{{ route('postLogin') }}">
+    <form method="post" class="login-form">
       <h1>Admin Login</h1>
       <div class="form-group">
         <label for="email">Email:</label>

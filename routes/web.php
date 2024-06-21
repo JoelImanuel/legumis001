@@ -21,13 +21,10 @@ Route::get('/', function () {
 });
 
 Route::get('/login', [AuthController::class, 'index']);
-Route::post('/login', [AuthController::class, 'postLogin'])->name('postLogin');
 
 Route::get('customer', function () {
     return view('customer');
 });
-Route::post('/update-total-nominal', [DashboardController::class, 'updateTotalNominal']);
-
 Route::get('analisa', function () {
     return view('analisa');
 });
@@ -38,5 +35,4 @@ Route::get('transaksi', function () {
     return view('transaksi');
 });
 Route::resource('produk', ProdukController::class);
-
 
