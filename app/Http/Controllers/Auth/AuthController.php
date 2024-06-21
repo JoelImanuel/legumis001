@@ -16,14 +16,20 @@ class AuthController extends Controller
 
 public function postLogin (Request $request) {
     $request->validate( [
-        'username'=> 'required',
+        'email'=> 'required',
         'password'=> 'required',
     ]);
-    $credentials = $request->only('username', 'password');
+    $credentials = $request->only('email', 'password');
     if (Auth::attempt($credentials)) {
         return redirect ()->intented('dashboard')
         ->withSuccess('Login Berhasil');
     }
     return redirect("login")->withSucces('Gagal Login');
 }    
+
+public function updateTotalNominal(Request $request) {
+    $totalNominal = $request->input('totalNominal');
+    Session::put('totalNominal', $totalNominal);
+    return response()->json(['success' => true]);
+}
 }
