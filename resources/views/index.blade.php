@@ -23,7 +23,7 @@
                 </div>
                 <div class="thumbnail">
                     <div>
-                        <div class="numbers">27</div>
+                        <div class="numbers">{{ $total_pelanggan }}</div>
                         <div class="cardName">Jumlah konsumen</div>
                     </div>
 
@@ -33,7 +33,7 @@
                 </div>
                 <div class="thumbnail">
                     <div>
-                        <div class="numbers">27</div>
+                        <div class="numbers">{{ $total_pesanan }}</div>
                         <div class="cardName">Total pesanan</div>
                     </div>
 
@@ -53,7 +53,8 @@
                 </div>
                 <a href="transaksi.php"><div class="thumbnail">
                     <div>
-                        <div class="numbers">Rp 36k</div>
+                        <div class="numbers">{{ number_format($total_harga_total / 1000, 0, '.', '') . 'K' }}
+                        </div>
                         <div class="cardName">Total nominal terjual</div>
                     </div>
 

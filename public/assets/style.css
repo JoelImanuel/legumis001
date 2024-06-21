@@ -448,6 +448,8 @@ ol li .done p::after {
     transition: 0.4s;
     margin-top: 10px;
     font-family: "Poppins", sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
 .active,
@@ -461,7 +463,7 @@ ol li .done p::after {
     background-color: white;
     overflow: hidden;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     top: -10px;
     font-size: 12px;
 }

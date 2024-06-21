@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="{{'assets/style.css'}}">
+    <link rel="stylesheet" href="{{'../assets/style.css'}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,27 +38,27 @@
 
             </p>
             <div class="menu">
-                <a href="/" class="active">
+                <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="customer">
+                <a href="keranjang" class="{{ request()->is('keranjang') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">person_outline</span>
                     <h3>Customer</h3>
                 </a>
-                <a href="analisa">
+                <a href="analisa" class="{{ request()->is('analisa') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">insights</span>
                     <h3>Analisa</h3>
                 </a>
-                <a href="pengiriman">
+                <a href="pengiriman" class="{{ request()->is('pengiriman') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">local_shipping</span>
                     <h3>Pengiriman</h3>
                 </a>
-                <a href="transaksi">
+                <a href="transaksi" class="{{ request()->is('transaksi') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">paid</span>
                     <h3>Transaksi</h3>
                 </a>
-                <a href="produk">
+                <a href="produk" class="{{ request()->is('produk') ? 'active' : '' }}">
                     <span class="material-symbols-outlined">receipt_long</span>
                     <h3>Produk</h3>
                 </a>

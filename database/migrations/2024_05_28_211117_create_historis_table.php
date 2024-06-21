@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('historis', function (Blueprint $table) {
             $table->id('id_histori');
-            $table->integer('id_pelanggan')->unsigned();
-            $table->integer('id_pesanan')->unsigned();
+            $table->string('nama_pelanggan');
+            $table->string('nama_keranjang');
+            $table->integer('jumlah_keranjang');
+            $table->integer('harga_total')->unsigned();
             $table->timestamps();
         });
     }
