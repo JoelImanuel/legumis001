@@ -66,7 +66,7 @@
                     <span class="material-symbols-outlined">settings</span>
                     <h3>Pengaturan</h3>
                 </a> -->
-                <a href="login">
+                <a href="{{ url('/logout') }}">
                     <span class="material-symbols-outlined">login</span>
                     <h3>Keluar</h3>
                     <!-- <a href="logout.php">Keluar</a> -->
